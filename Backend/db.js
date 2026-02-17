@@ -2,8 +2,6 @@ import dotenv from "dotenv"
 dotenv.config()
 import mongoose from "mongoose"
 
-const mongoose = require("mongoose");
-
 mongoose.connect(process.env.MONGOOSE_URL)
 .then(() => {
     console.log("Conenct db is connected")
@@ -21,7 +19,7 @@ const UserSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        minLength: 6
+        maxLength: 6
     },
     firstName:{
         type: String,
