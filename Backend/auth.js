@@ -3,7 +3,7 @@ import JWT from "jsonwebtoken"
 
 const authMIddleware= (req, res, next)=>{
     const authHeader = req.headers.authorization
-    if(!authHeader || !authHeader.statswith('barer')){
+    if(!authHeader || !authHeader.startsWith('Bearer ')){
         return res.status(400).json({
             msg: "Token Invalid"
         })
@@ -14,7 +14,7 @@ const authMIddleware= (req, res, next)=>{
         const decode = JWT.verify(token, JWT_SECRET_key);
 
         if(decode.userId){
-            req.userid = decode.userId;
+            req.userId = decode.userId;
             next();
         }
         else{
