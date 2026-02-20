@@ -8,6 +8,11 @@ A simple PayTM clone built for learning full-stack web development with the MERN
 
 **Frontend:** React 19, Vite
 
+## Pages Show
+
+![Paytm Clone SignUp page](./Frontend/PayTM%20Clone/ShowthePages/image.png)
+
+
 ## Project Structure
 
 ```
