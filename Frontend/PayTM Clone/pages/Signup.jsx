@@ -9,13 +9,9 @@ const Signup = () => {
   return (
     // Full screen parent
     
-    <div className='bg-amber-300 w-screen h-screen flex items-center justify-center'>
+    <div className='bg-gray-100 w-screen h-screen flex items-center justify-center'>
     
-    {/* For The Form to Submit*/}
-    <form action="">
-            {/* Light middle card */}
-            <div className='bg-amber-100 p-8 rounded-xl shadow-lg w-[350px]'>
-                
+    <form action="" className='bg-white p-8 rounded-xl shadow-lg w-[350px] '>                
                 {/* Heading */}
                 <div className='mb-4'>
                 <h1 className='text-xl font-semibold'>Sign up</h1>
@@ -46,7 +42,6 @@ const Signup = () => {
                 </span>
                 </div>
 
-            </div>
         </form>
     </div>
   )
