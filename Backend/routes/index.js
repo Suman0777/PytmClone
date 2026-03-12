@@ -3,6 +3,8 @@ import userRouter from "./user.js"
 import accountRouter from "./account.js"
 const router = express.Router();
 
+//all route are 
+
 router.use("/user", userRouter);
 router.use("/account", accountRouter);
 
